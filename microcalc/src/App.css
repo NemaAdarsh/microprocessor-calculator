@@ -1,7 +1,7 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f8f9fa;
-  color: #333;
+  background-color: #202020;
+  color: #ffffff;
   margin: 0;
   padding: 0;
 }
@@ -9,41 +9,54 @@ body {
 .container {
   max-width: 600px;
   margin: 50px auto;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
 }
 
 h1 {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 30px;
   color: #007bff;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 label {
-  font-size: 1.1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 input[type="number"],
 select {
   width: 100%;
-  padding: 12px;
-  font-size: 1em;
-  margin: 10px 0 25px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f8f9fa;
+  padding: 15px;
+  font-size: 1.2em;
+  margin: 20px 0 30px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+select:focus {
+  outline: none;
+  border-color: #007bff;
 }
 
 button {
   background-color: #007bff;
   color: #fff;
   border: none;
-  border-radius: 5px;
-  padding: 12px 25px;
-  font-size: 1em;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -54,22 +67,28 @@ button:hover {
 
 textarea {
   width: 100%;
-  padding: 12px;
-  font-size: 1em;
-  margin-top: 15px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f8f9fa;
+  padding: 15px;
+  font-size: 1.2em;
+  margin-top: 20px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
   resize: none;
+  transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
 }
 
 option {
-  font-size: 1em;
+  font-size: 1.2em;
 }
 
 @media screen and (max-width: 600px) {
   .container {
-    padding: 15px;
+    padding: 20px;
     border-radius: 0;
     box-shadow: none;
   }
